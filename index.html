@@ -7,32 +7,41 @@
     <title>Portoflio Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/style.css" />
-    
     <link rel="stylesheet" type="text/css" media="screen" href="vendors/bulma.css" />
-<link rel="stylesheet" type="text/css" href="vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/font-awesome/css/font-awesome.min.css">
+    <script src="vendors/angular/angular.js"></script>
     <script src="scripts/client.js"></script>
 </head>
 
 <body>
     <section class="hero is-medium is-info is-bold">
         <div class="hero-head">
+            
             <nav class="navbar">
-                <div class="container">
-                    <div class="navbar-menu">
-                        <div class="navbar-end">
-                            <span class="navbar-item">
-                              
-<i class="fa fa-github" aria-hidden="true"></i>
-                              
-                            </span>
-<span class="navbar-item">
 
-    <i class="fa fa-twitter" aria-hidden="true"></i>
+                <div class="navbar-menu">
+                    <div class="navbar-end">
+                        <span class="navbar-item">
+                            <a class="button is-small" href="https://github.com/joshnothum">
+                                <span class="icon is-small">
+                                    <i class="fa fa-github"></i>
+                                </span>
+                                <span>GitHub</span>
+                            </a>
+                        </span>
+                        <span class="navbar-item">
 
-</span>
-                        </div>
+                            <a class="button is-small" href="https://twitter.com/josh_nothum">
+                                <span class="icon is-small">
+                                    <i class="fa fa-twitter"></i>
+                                </span>
+                                <span>Twitter</span>
+                            </a>
+
+                        </span>
                     </div>
                 </div>
+
             </nav>
         </div>
 
@@ -43,26 +52,64 @@
             </div>
         </div>
     </section>
-    <section class="section">
-        <div class="tile is-ancestor">
-            <div class="tile is-8 is-parent">
-
-                <div class="tile is-child box">
-                    <p class="title">6ixes</p>
-                    <p>Just lists of 6. It's strange. It's unordered. It's unncessary.</p>
+    <div class="box">
+        <p class="has-text-centered">
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+    </div>
+    <section class="section is-info">
+        <div class="container">
+            <div class="content">
+                <h1 class="has-text-centered">
+                    <strong>Some of the stuff I've done.</strong>
+                </h1>
+            </div>
+            <div class="tile is-ancestor">
+                <div class="tile is-vertical is-8">
+                    <div class="tile">
+                        <div class="tile is-parent">
+                            <article class="tile is-child notification">
+                                <p class="title">30 Rock</p>
+                                <p class="subtitle">API</p>
+                                <figure class="image is-4by3">
+                                </figure>
+                            </article>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child notification">
+                                <p class="title">6ixes</p>
+                                <p class="subtitle">Blog</p>
+                                <figure class="image is-4by3">
+                                </figure>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification">
+                            <p class="title">Top of the Charts.js</p>
+                            <p class="subtitle"></p>
+                            <div class="content">
+                            </div>
+                        </article>
+                    </div>
                 </div>
-
-                <div class="tile is-child box">
-                    <p class="title">Top of the Charts.js</p>
-                    <p>Lyrical analysis of music produced by The Black Keys and presented with Charts.js.</p>
+                <div class="tile is-parent">
+                    <article class="tile is-child notification">
+                        <div class="content">
+                            <p class="title">Off_The_Bench</p>
+                            <p class="subtitle">Full-Stack Application</p>
+                            <figure class="image is-4by3">
+                            </figure>
+                            <div class="content">
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
-            <div class="tile is-parent is-vertical">
-                <div class="tile is-child box">
-                    <p class="title">Off_The_Bench</p>
-                    <p class="content">Full-stack application for locating and documenting basketball courts around the MSP area. Off_The_Bench
-                        is a MEAN stack app that uses Google Places, Photos and Filestack APIs.</p>
-                </div>
+            <div class="content">
+                <p class="has-text-right">
+                    <a href="http://www.github.com/joshnothum">...more</a>
+                </p>
             </div>
         </div>
     </section>
@@ -70,7 +117,7 @@
         <div class="container">
             <div class="content has-text-centered">
                 <p>
-                    Thanks for visiting! Made with
+                    Thanks for visiting! Made with lots of coffee and
                     <strong>Bulma!</strong>
                 </p>
             </div>
