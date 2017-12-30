@@ -7,12 +7,35 @@
     <title>Portoflio Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/style.css" />
+    
     <link rel="stylesheet" type="text/css" media="screen" href="vendors/bulma.css" />
-    <script src="client.js"></script>
+<link rel="stylesheet" type="text/css" href="vendors/font-awesome/css/font-awesome.min.css">
+    <script src="scripts/client.js"></script>
 </head>
 
 <body>
     <section class="hero is-medium is-info is-bold">
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-menu">
+                        <div class="navbar-end">
+                            <span class="navbar-item">
+                              
+<i class="fa fa-github" aria-hidden="true"></i>
+                              
+                            </span>
+<span class="navbar-item">
+
+    <i class="fa fa-twitter" aria-hidden="true"></i>
+
+</span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
         <div class="hero-body">
             <div class="container">
                 <h1 class="title">Josh Nothum</h1>
@@ -20,24 +43,29 @@
             </div>
         </div>
     </section>
-<div class="tile is-ancestor">
-    <div class="tile is-4 is-parent">
-        <div class="tile is-child box">
-            <p class="title">6ixes</p>
-            <p>Just lists of 6. It's strange. It's unordered. It's unncessary.</p>
+    <section class="section">
+        <div class="tile is-ancestor">
+            <div class="tile is-8 is-parent">
+
+                <div class="tile is-child box">
+                    <p class="title">6ixes</p>
+                    <p>Just lists of 6. It's strange. It's unordered. It's unncessary.</p>
+                </div>
+
+                <div class="tile is-child box">
+                    <p class="title">Top of the Charts.js</p>
+                    <p>Lyrical analysis of music produced by The Black Keys and presented with Charts.js.</p>
+                </div>
+            </div>
+            <div class="tile is-parent is-vertical">
+                <div class="tile is-child box">
+                    <p class="title">Off_The_Bench</p>
+                    <p class="content">Full-stack application for locating and documenting basketball courts around the MSP area. Off_The_Bench
+                        is a MEAN stack app that uses Google Places, Photos and Filestack APIs.</p>
+                </div>
+            </div>
         </div>
-        <div class="tile is-child box">
-            <p class="title">Top of the Charts.js</p>
-            <p>Lyrical analysis of music produced by The Black Keys and presented with Charts.js.</p>
-        </div>
-    </div>
-    <div class="tile is-parent is-vertical">
-        <div class="tile is-child box">
-            <p class="title">Off_The_Bench</p>
-            <p class="content">Full-stack application for locating and documenting basketball courts around the MSP area.  Off_The_Bench is a MEAN stack app that uses Google Places, Photos and Filestack APIs.</p>
-        </div>
-    </div>
-</div>
+    </section>
     <footer class="footer">
         <div class="container">
             <div class="content has-text-centered">
@@ -47,6 +75,7 @@
                 </p>
             </div>
         </div>
+
     </footer>
 </body>
 
