@@ -1,2 +1,4 @@
-# portfolio
-A portfolio page displaying applications and contact information
+# Portfolio
+A portfolio page using CSS Framework Bulma.
+
+
