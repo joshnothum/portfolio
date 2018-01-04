@@ -10,14 +10,15 @@
     <link rel="stylesheet" type="text/css" media="screen" href="vendors/bulma.css" />
     <link rel="stylesheet" href="vendors/devicons/css/devicons.min.css">
     <link rel="stylesheet" type="text/css" href="vendors/font-awesome/css/font-awesome.min.css">
+    <script src="vendors/angular/angular.min.js"></script>
+    <script src="vendors/angular-route/angular-route.min.js"></script>
     <script src="scripts/client.js"></script>
+    <script src="scripts/controllers/index.controller.js"></script>
 </head>
-
+<body ng-app="myApp">
 <section class="hero is-medium is-info is-bold">
     <div class="hero-head">
-
         <nav class="navbar">
-
             <div class="navbar-menu">
                 <div class="navbar-end">
                     <span class="navbar-item">
@@ -124,7 +125,7 @@
             <div class="column is-7">
                 <div class="tabs is-toggle is-fullwidth is-medium">
                     <ul>
-                        <li class="is-active">
+                        <li class="is-active" ng-click="ic.skillShow()">
                             <a>
                                 <span class="icon">
                                     <i class="fa fa-id-card-o"></i>
@@ -161,9 +162,9 @@
             <p>
                 Thanks for visiting! Made with lots of coffee and
                 <strong>Bulma!</strong>
-<span class="has-text-centered">
-<i class="devicon-javascript-plain colored"></i>
-</span>
+                <span class="has-text-centered">
+                    <i class="devicon-javascript-plain colored"></i>
+                </span>
             </p>
         </div>
     </div>
