@@ -8,12 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/style.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="vendors/bulma.css" />
-    <link rel="stylesheet" href="vendors/devicons/css/devicons.min.css">
+    <link rel="stylesheet" href="vendors/devicon/devicon.min.css">
     <link rel="stylesheet" type="text/css" href="vendors/font-awesome/css/font-awesome.min.css">
-    <script src="vendors/angular/angular.min.js"></script>
-    <script src="vendors/angular-route/angular-route.min.js"></script>
+  
     <script src="scripts/client.js"></script>
-    <script src="scripts/controllers/index.controller.js"></script>
+
 </head>
 <body ng-app="myApp">
 <section class="hero is-medium is-info is-bold">
@@ -54,7 +53,7 @@
 </section>
 <div class="box">
     <p class="has-text-centered">
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+         “The most disastrous thing that you can ever learn is your first programming language.” ― Alan Kay
     </p>
 </div>
 <section class="section is-info">
@@ -113,48 +112,29 @@
         </div>
     </div>
 </section>
-<section class="section is-info no-padding-top">
+<section class="section is-info">
     <div class="container">
-        <div class="content profile__content">
+        <div class="content">
             <h1 class="has-text-centered">
-                <strong>What I'm good at.</strong>
+                <strong>Tools I work with.</strong>
             </h1>
-            <div class="underline"></div>
         </div>
+       <div class="level">
         <div class="columns">
             <div class="column is-7">
-                <div class="tabs is-toggle is-fullwidth is-medium">
-                    <ul>
-                        <li class="is-active" ng-click="ic.skillShow()">
-                            <a>
-                                <span class="icon">
-                                    <i class="fa fa-id-card-o"></i>
-                                </span>
-                                <span>Front-end</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                <span class="icon">
-                                    <i class="fa fa-server"></i>
-                                </span>
-                                <span>Back-end</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                <span class="icon">
-                                    <i class="fa fa-wrench"></i>
-                                </span>
-                                <span>Tools</span>
-                            </a>
-                        </li>
-                    </ul>
-
-                </div>
+                <span class="icon is-large level-item">
+                    <i class="devicon-angularjs-plain colored skills"></i>
+                </span>
             </div>
-        </div>
+            <div class="column">
+                <span class="icon is-large">
+                    <i class="devicon-nodejs-plain-wordmark colored skills"></i>
+                </span>
+            </div>
 
+        </div>
+        </div>
+</div>
 </section>
 <footer class="footer">
     <div class="container">
@@ -162,9 +142,6 @@
             <p>
                 Thanks for visiting! Made with lots of coffee and
                 <strong>Bulma!</strong>
-                <span class="has-text-centered">
-                    <i class="devicon-javascript-plain colored"></i>
-                </span>
             </p>
         </div>
     </div>
