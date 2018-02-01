@@ -1,5 +1,5 @@
 # Portfolio
-A portfolio page for Josh Nothum using CSS Framework Bulma.
+A portfolio page for Josh Nothum made with Bulma.
 
 
 # Instructions
