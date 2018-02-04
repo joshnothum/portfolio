@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "angular": "^1.6.7",
     "bulma": "^0.6.1",
     "font-awesome": "^4.7.0",
     "fs": "0.0.1-security"
