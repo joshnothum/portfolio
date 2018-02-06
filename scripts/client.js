@@ -7,6 +7,10 @@ console.log('loaded');
 
 
 home.blogDirect = function(){
-    window.location.href = "http://www.joshnothum.com";
+    window.location.href = "https://www.joshnothum.com";
+   };
+
+   home.soloDirect = function () {
+       window.location.href = "https://glacial-sierra-30356.herokuapp.com/#/home";
    };
 }]);
