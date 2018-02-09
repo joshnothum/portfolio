@@ -16,4 +16,7 @@ home.blogDirect = function(){
    home.groupDirect = function () {
        window.location.href = "https://github.com/AndrewResidence/andrew-residence";
    };
+home.blackDirect = function () {
+    window.location.href = "https://github.com/joshnothum/black_keys_analysis";
+};
 }]);
