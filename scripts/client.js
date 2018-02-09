@@ -9,8 +9,11 @@ console.log('loaded');
 home.blogDirect = function(){
     window.location.href = "https://www.joshnothum.com";
    };
- 
    home.soloDirect = function () {
        window.location.href = "https://glacial-sierra-30356.herokuapp.com/#/home";
+   };
+
+   home.groupDirect = function () {
+       window.location.href = "https://github.com/AndrewResidence/andrew-residence";
    };
 }]);

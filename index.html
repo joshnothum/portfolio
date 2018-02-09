@@ -52,50 +52,50 @@
             “The most disastrous thing that you can ever learn is your first programming language.” ― Alan Kay
         </p>
     </div>
-<section>
-    <div class="content">
-        <h1 class="has-text-centered">
-            <strong>Photos.</strong>
-        </h1>
-        <div class="underline"></div>
-    </div>
-    <div class="container">
-        <div class="columns">
-            <div class="column is-three-fifths is-offset-one-fifth">
-                <div class='carousel carousel-animated carousel-animate-slide'>
-                    <div class='carousel-container'>
-                        <div class='carousel-item has-background is-active'>
-                            <img class="is-background" src="https://image.ibb.co/jt6Wac/black_pistol_fire.jpg" alt="black pistol fire" width="640" height="310"
-                            />
-                            <div class="title">Me with Black Pistol Fire.</div>
-                        </div>
-                        <div class='carousel-item has-background'>
-                            <img class="is-background" src="https://image.ibb.co/mXzv1H/going_deep.jpg" alt="football" width="640" height="310" />
-                            <div class="title">Jaxon is pretty serious about this.
+    <section>
+        <div class="content">
+            <h1 class="has-text-centered">
+                <strong>Photos.</strong>
+            </h1>
+            <div class="underline"></div>
+        </div>
+        <div class="container">
+            <div class="columns">
+                <div class="column is-three-fifths is-offset-one-fifth">
+                    <div class='carousel carousel-animated carousel-animate-slide'>
+                        <div class='carousel-container'>
+                            <div class='carousel-item has-background is-active'>
+                                <img class="is-background" src="https://image.ibb.co/jt6Wac/black_pistol_fire.jpg" alt="black pistol fire" width="640" height="310"
+                                />
+                                <div class="title">Me with Black Pistol Fire.</div>
                             </div>
-                        </div>
-                        <div class='carousel-item has-background'>
-                            <img class="is-background" src="https://image.ibb.co/jZ0Dox/mega_desk.jpg" alt="mega desk" width="640" height="310" />
-                            <div class="title">This is how I code.</div>
-                        </div>
-                        <!-- <div class='carousel-item has-background'>
+                            <div class='carousel-item has-background'>
+                                <img class="is-background" src="https://image.ibb.co/mXzv1H/going_deep.jpg" alt="football" width="640" height="310" />
+                                <div class="title">Jaxon is pretty serious about this.
+                                </div>
+                            </div>
+                            <div class='carousel-item has-background'>
+                                <img class="is-background" src="https://image.ibb.co/jZ0Dox/mega_desk.jpg" alt="mega desk" width="640" height="310" />
+                                <div class="title">This is how I code.</div>
+                            </div>
+                            <!-- <div class='carousel-item has-background'>
             <img class="is-background" src="https://wikiki.github.io/images/life.jpg" alt="" width="640" height="310" />
             <div class="title">Life</div>
         </div> -->
-                    </div>
-                    <div class="carousel-navigation">
-                        <div class="carousel-nav-left">
-                            <i class="fa fa-chevron-left" aria-hidden="true"></i>
                         </div>
-                        <div class="carousel-nav-right">
-                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        <div class="carousel-navigation">
+                            <div class="carousel-nav-left">
+                                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                            </div>
+                            <div class="carousel-nav-right">
+                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
     <section class="section is-info projects">
         <div class="container" ng-controller="HomeController as home">
             <div class="content">
@@ -137,7 +137,7 @@
 
                 <div class="tile is-parent">
 
-                    <article class="tile is-child notification project">
+                    <article class="tile is-child notification project" ng-click="home.groupDirect()">
                         <div class="content">
                             <p class="title">Andrew Residence</p>
                             <p class="subtitle">Scheduling Application with Plivo API</p>
