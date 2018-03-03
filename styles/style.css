@@ -7,8 +7,6 @@
     transform: scale(1.05);
 }
 .project--blackKeys {
-    color: white;
-    background-repeat: no-repeat;
-    background-position: bottom;
+
     background-color: violet;
 }
