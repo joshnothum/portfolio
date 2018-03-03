@@ -6,3 +6,11 @@
 .project:hover {
     transform: scale(1.05);
 }
+.project--blackKeys {
+    color: white;
+    background-image: url(https://image.ibb.co/kDOryS/Screen_Shot_2018_02_27_at_1_18_30_AM.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: black;
+}
