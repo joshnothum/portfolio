@@ -7,7 +7,7 @@ myApp.controller('HomeController', ['$location', function () {
 
 
     home.blogDirect = function () {
-        window.location.href = "https://www.joshnothum.com";
+        window.location.href = "https://www.joshnothum.tech";
     };
     home.soloDirect = function () {
         window.location.href = "https://glacial-sierra-30356.herokuapp.com/#/home";
