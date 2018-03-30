@@ -14,6 +14,7 @@
     "bulma": "^0.6.1",
     "bulma-carousel": "^0.3.5",
     "font-awesome": "^4.7.0",
+    "font-awesome-animation": "^0.2.0",
     "fs": "0.0.1-security"
   }
 }

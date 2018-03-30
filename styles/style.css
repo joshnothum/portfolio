@@ -1,3 +1,25 @@
+
+.floaty {
+	height: 7vw;
+	text-align: center;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 3vh;
+	margin-top: -10vh;
+	display: flex;
+	font-size: 1.5em;
+}
+
+.floaty__text {
+	margin-bottom: 2vh !important;
+}
+.header__image{
+	background-image: url(https://image.ibb.co/mXzv1H/going_deep.jpg) !important;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgb(41, 72, 75, .5) !important;
+}
 .project {
     transition: all 0.2s ease;
     cursor: pointer;
@@ -5,10 +27,4 @@
 
 .project:hover {
     transform: scale(1.05);
-}
-.header__image{
-	background-image: url(https://image.ibb.co/mXzv1H/going_deep.jpg) !important;
-    background-size: cover;
-    background-blend-mode: multiply;
-    background-color: rgb(41, 72, 75, .5) !important;
 }
