@@ -6,3 +6,9 @@
 .project:hover {
     transform: scale(1.05);
 }
+.header__image{
+	background-image: url(https://image.ibb.co/mXzv1H/going_deep.jpg) !important;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgb(41, 72, 75, .5) !important;
+}
