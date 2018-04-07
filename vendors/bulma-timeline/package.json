@@ -1,0 +1,88 @@
+{
+  "_from": "bulma-timeline",
+  "_id": "bulma-timeline@2.0.1",
+  "_inBundle": false,
+  "_integrity": "sha1-8R6VL9t9o14uK5m+67t2e2VBuZE=",
+  "_location": "/bulma-timeline",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "bulma-timeline",
+    "name": "bulma-timeline",
+    "escapedName": "bulma-timeline",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/bulma-timeline/-/bulma-timeline-2.0.1.tgz",
+  "_shasum": "f11e952fdb7da35e2e2b99beebbb767b6541b991",
+  "_spec": "bulma-timeline",
+  "_where": "/Users/joshnothum/Desktop/portfolio/portfolio",
+  "author": {
+    "name": "Wikiki",
+    "email": "wikiki@protonmail.com",
+    "url": "https://wikiki.github.io/bulma-extensions/overview"
+  },
+  "bugs": {
+    "url": "https://github.com/Wikiki/bulma-timeline/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Display a vertical timeline, in different colors, sizes, and states ",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.39",
+    "@babel/preset-env": "^7.0.0-beta.39",
+    "babel-core": "^7.0.0-beta.3",
+    "bulma": "^0.6.2",
+    "camelcase": "^4.1.0",
+    "conventional-github-releaser": "^2.0.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-babel-minify": "^0.3.0",
+    "gulp-better-rollup": "^3.0.0",
+    "gulp-bump": "^3.1.0",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-conventional-changelog": "^1.1.11",
+    "gulp-git": "^2.5.1",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "rollup-plugin-babel": "^3.0.3",
+    "run-sequence": "^2.2.1"
+  },
+  "files": [
+    "dist/bulma-timeline.sass",
+    "dist/bulma-timeline.min.css",
+    "LICENSE",
+    "README.md"
+  ],
+  "homepage": "https://github.com/Wikiki/bulma-timeline#readme",
+  "keywords": [
+    "Bulma",
+    "bulma",
+    "bulma.io",
+    "extensions",
+    "timeline"
+  ],
+  "license": "MIT",
+  "main": "dist/bulma-timeline.sass",
+  "name": "bulma-timeline",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wikiki/bulma-timeline.git"
+  },
+  "scripts": {
+    "build": "gulp"
+  },
+  "version": "2.0.1"
+}
