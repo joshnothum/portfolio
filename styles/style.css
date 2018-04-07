@@ -15,7 +15,7 @@
 	margin-bottom: 2vh !important;
 }
 .header__image{
-	background-image: url(https://image.ibb.co/mXzv1H/going_deep.jpg) !important;
+	/* background-image: url(https://image.ibb.co/mXzv1H/going_deep.jpg) !important; */
     background-size: cover;
     background-blend-mode: multiply;
     background-color: rgb(41, 72, 75, .5) !important;
