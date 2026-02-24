@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap');
+
+:root {
+  --bg: #e9f0f8;
+  --paper: #fbfdff;
+  --ink: #162031;
+  --muted: #52607a;
+  --brand: #2f5de0;
+  --brand-2: #2f9a6a;
+  --line: #d6dfec;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: 'Space Grotesk', sans-serif;
+  background:
+    radial-gradient(circle at 15% 10%, #6f8dff2e, transparent 45%),
+    radial-gradient(circle at 95% 5%, #44b98726, transparent 30%),
+    radial-gradient(circle at 70% 20%, #5aa9e61a, transparent 35%),
+    var(--bg);
+}
+
+.page {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 5rem;
+}
+
+.section-wrap {
+  margin-top: 2.25rem;
+  padding: 2rem;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  border-radius: 20px;
+  box-shadow: 0 6px 20px #0000000f;
+}
+
+.hero {
+  margin-top: 0.5rem;
+  background: linear-gradient(125deg, #eef3ff 0%, #f4f6ff 45%, #edf8f4 100%);
+}
+
+.eyebrow {
+  margin: 0;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+h1 {
+  margin: 0.35rem 0;
+  font-family: 'Instrument Serif', serif;
+  font-size: clamp(2.1rem, 5vw, 4rem);
+  line-height: 0.95;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+}
+
+.lead {
+  margin: 0.4rem 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.summary {
+  max-width: 65ch;
+  color: var(--muted);
+}
+
+.trail {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.actions {
+  margin-top: 1.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: white;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  grid-column: span 6;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1rem;
+  background: #fff;
+}
+
+.card-kicker {
+  margin: 0;
+  color: var(--brand);
+  font-size: 0.83rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.card h3 {
+  margin: 0.35rem 0 0.45rem;
+}
+
+.card p {
+  margin-top: 0;
+  color: var(--muted);
+}
+
+.card a {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.timeline li {
+  position: relative;
+  width: 50%;
+  padding: 0 1.25rem 1.5rem;
+}
+
+.timeline li::before {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 0.4rem;
+  border-radius: 50%;
+  background: var(--brand-2);
+  border: 2px solid var(--paper);
+  box-shadow: 0 0 0 1px var(--brand-2);
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 3px;
+  transform: translateX(-50%);
+  background: linear-gradient(var(--brand-2), #6f8dff);
+}
+
+.timeline li:nth-child(odd) {
+  left: 0;
+  text-align: right;
+}
+
+.timeline li:nth-child(even) {
+  left: 50%;
+}
+
+.timeline li:nth-child(odd)::before {
+  right: -8px;
+}
+
+.timeline li:nth-child(even)::before {
+  left: -8px;
+}
+
+.timeline span {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.2rem;
+  color: var(--brand);
+}
+
+.timeline p {
+  margin: 0;
+  color: var(--muted);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 0.75rem 0.85rem;
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.socials a {
+  text-decoration: none;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.5rem 0.85rem;
+  background: white;
+}
+
+a:focus-visible {
+  outline: 3px solid #8ca5ff;
+  outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+  .section-wrap {
+    padding: 1.25rem;
+  }
+
+  .card {
+    grid-column: span 12;
+  }
+
+  .timeline::before {
+    left: 0.2rem;
+    transform: none;
+  }
+
+  .timeline li {
+    width: 100%;
+    left: 0;
+    text-align: left;
+    padding: 0 0 1rem 1.35rem;
+  }
+
+  .timeline li:nth-child(odd)::before,
+  .timeline li:nth-child(even)::before {
+    left: -0.25rem;
+    right: auto;
+  }
+}

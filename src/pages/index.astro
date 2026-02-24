@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { profile, projects, socials, timeline } from '../data/portfolio';
+---
+
+<BaseLayout title={`${profile.name} | Portfolio`}>
+  <main class="page">
+    <header class="hero section-wrap">
+      <p class="eyebrow">Portfolio</p>
+      <h1>{profile.name}</h1>
+      <p class="lead">{profile.title}</p>
+      <p class="summary">{profile.summary}</p>
+      <p class="trail">{profile.locationTrail.join(' -> ')}</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://github.com/joshnothum" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/josh-nothum/" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </header>
+
+    <section class="section-wrap">
+      <h2>Selected Projects</h2>
+      <div class="project-grid">
+        {projects.map((project) => (
+          <article class="card">
+            <p class="card-kicker">{project.type}</p>
+            <h3>{project.name}</h3>
+            <p>{project.description}</p>
+            <a href={project.link} target="_blank" rel="noreferrer">Open project</a>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="section-wrap">
+      <h2>Timeline</h2>
+      <ol class="timeline">
+        {timeline.map((item) => (
+          <li>
+            <span>{item.year}</span>
+            <p>{item.event}</p>
+          </li>
+        ))}
+      </ol>
+    </section>
+
+    <section class="section-wrap">
+      <h2>Elsewhere</h2>
+      <div class="socials">
+        {socials.map((social) => (
+          <a href={social.href} target="_blank" rel="noreferrer">{social.label}</a>
+        ))}
+      </div>
+    </section>
+  </main>
+</BaseLayout>

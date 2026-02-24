@@ -1,25 +1,32 @@
-# Portfolio
-A portfolio page for Josh Nothum made with Bulma.
+# Portfolio (Astro)
 
+Modernized personal portfolio rebuilt with [Astro](https://astro.build).
 
-# Projects
+## Stack
 
-### off_the_bench
+- Astro
+- Plain CSS (single global stylesheet)
+- Data-driven content via `src/data/portfolio.ts`
 
-Full-stack application hosted on heroku. Uses google places API to locate basketball courts around Minneapolis.  Users can contribute additional information to improve database of courts.
+## Local development
 
-### charts with keys
+```bash
+npm install
+npm run dev
+```
 
-Disects song lyrics and counts the occurences of each word.  *Under Development*
+## Build
 
-### Andrew Residence
+```bash
+npm run build
+npm run preview
+```
 
-SEAN stack scheduling application for non-profit org in Minneapolis.
+## Content updates
 
-### 6ixes
+Edit `src/data/portfolio.ts` to update:
 
-blog that makes lists of 6.
-
-# Instructions
-
-NPM install
+- Profile summary
+- Project cards
+- Timeline entries
+- Social links
