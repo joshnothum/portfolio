@@ -8,31 +8,25 @@ export const profile = {
 
 export const projects = [
   {
-    name: 'off_the_bench',
-    type: 'Full-stack web app',
+    name: 'playcall-intel',
+    type: 'Analytics pipeline',
     description:
-      'Uses location data to help players find courts and contribute updates to a shared basketball database.',
-    link: 'https://glacial-sierra-30356.herokuapp.com/#/home',
+      'Contract-driven NFL analytics pipeline with local LLM enrichment, producing reproducible, data-grounded game reports.',
+    link: 'https://github.com/joshnothum/playcall-intel',
   },
   {
-    name: 'Charts with Keys',
+    name: 'cfb-film-room',
+    type: 'AI / sports tech',
+    description:
+      'AI-powered football film room that scrapes CFB playbook art, parses game footage, and delivers coach-style play analysis.',
+    link: 'https://github.com/joshnothum/cfb-film-room',
+  },
+  {
+    name: 'Lyric Pulse',
     type: 'Data viz experiment',
     description:
       'Analyzes song lyrics and visualizes word frequency trends to surface repeated themes.',
     link: 'https://github.com/joshnothum/black_keys_analysis',
-  },
-  {
-    name: 'Andrew Residence',
-    type: 'Scheduling platform',
-    description:
-      'SEAN stack scheduling app for a nonprofit organization in Minneapolis.',
-    link: 'https://github.com/AndrewResidence/andrew-residence',
-  },
-  {
-    name: '6ixes',
-    type: 'Writing / blog',
-    description: 'A personal writing project built around concise lists of six.',
-    link: 'https://www.joshnothum.dev',
   },
 ];
 
