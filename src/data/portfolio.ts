@@ -3,7 +3,11 @@ export const profile = {
   title: 'Software Engineer',
   summary:
     'I build practical software with strong product instincts, clear UX, and a bias toward shipping.',
-  locationTrail: ['STL', 'MSP', 'PHX'],
+  locationTrail: [
+    { city: 'STL', icon: 'arch' },
+    { city: 'MSP', icon: 'snowflake' },
+    { city: 'PHX', icon: 'sun' },
+  ],
 };
 
 export const projects = [

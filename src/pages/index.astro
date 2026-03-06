@@ -10,7 +10,44 @@ import { profile, projects, socials, timeline } from '../data/portfolio';
       <h1>{profile.name}</h1>
       <p class="lead">{profile.title}</p>
       <p class="summary">{profile.summary}</p>
-      <p class="trail">{profile.locationTrail.join(' -> ')}</p>
+      <div class="trail">
+        {profile.locationTrail.map((stop, i) => (
+          <span class="trail-stop">
+            {i > 0 && <span class="trail-arrow">→</span>}
+            {stop.icon === 'arch' && (
+              <svg class="city-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+                <path d="M2 22 C4 2 20 2 22 22" />
+              </svg>
+            )}
+            {stop.icon === 'snowflake' && (
+              <svg class="city-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true">
+                <line x1="12" y1="2" x2="12" y2="22" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <line x1="5.5" y1="5.5" x2="18.5" y2="18.5" />
+                <line x1="18.5" y1="5.5" x2="5.5" y2="18.5" />
+                <line x1="12" y1="2" x2="9" y2="5" /><line x1="12" y1="2" x2="15" y2="5" />
+                <line x1="12" y1="22" x2="9" y2="19" /><line x1="12" y1="22" x2="15" y2="19" />
+                <line x1="2" y1="12" x2="5" y2="9" /><line x1="2" y1="12" x2="5" y2="15" />
+                <line x1="22" y1="12" x2="19" y2="9" /><line x1="22" y1="12" x2="19" y2="15" />
+              </svg>
+            )}
+            {stop.icon === 'sun' && (
+              <svg class="city-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="4" />
+                <line x1="12" y1="2" x2="12" y2="5" />
+                <line x1="12" y1="19" x2="12" y2="22" />
+                <line x1="2" y1="12" x2="5" y2="12" />
+                <line x1="19" y1="12" x2="22" y2="12" />
+                <line x1="4.93" y1="4.93" x2="7.05" y2="7.05" />
+                <line x1="16.95" y1="16.95" x2="19.07" y2="19.07" />
+                <line x1="19.07" y1="4.93" x2="16.95" y2="7.05" />
+                <line x1="7.05" y1="16.95" x2="4.93" y2="19.07" />
+              </svg>
+            )}
+            <span class="city-label">{stop.city}</span>
+          </span>
+        ))}
+      </div>
       <div class="actions">
         <a class="btn btn-primary" href="https://github.com/joshnothum" target="_blank" rel="noreferrer">GitHub</a>
         <a class="btn" href="https://www.linkedin.com/in/josh-nothum/" target="_blank" rel="noreferrer">LinkedIn</a>
