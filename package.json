@@ -11,6 +11,9 @@
     "check": "astro check"
   },
   "dependencies": {
-    "astro": "^5.2.0"
+    "astro": "^5.18.0"
+  },
+  "overrides": {
+    "svgo": "^4.0.1"
   }
 }
